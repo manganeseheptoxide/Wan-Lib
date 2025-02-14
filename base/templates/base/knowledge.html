@@ -1,0 +1,37 @@
+{% extends 'main.html' %}
+
+{% load static %}
+{% block content %}
+<div class="container">
+    <br>
+    <br>
+
+    <div class="quadrant_y">
+        <a href="{% url 'knowledge-air' %}">
+            <img src="{% static 'images/air.png' %}" alt="none">
+        </a>
+    </div>
+    
+      <!-- Second Quadrant -->
+    <div class="quadrant_r">
+        <a href="{% url 'knowledge-fire' %}">
+            <img src="{% static 'images/fire.png' %}" alt="none">
+        </a>
+    </div>
+    
+      <!-- Third Quadrant -->
+    <div class="quadrant_b">
+        <a href="{% url 'knowledge-water' %}">
+            <img src="{% static 'images/water.png' %}" alt="none">
+        </a>
+    </div>
+    
+    <div class="quadrant_g">
+        <a href="{% url 'knowledge-earth' %}">
+            <img src="{% static 'images/earth.png' %}" alt="none">
+        </a>
+    </div>
+</div>
+
+{% endblock content %}
+    
